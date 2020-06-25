@@ -96,6 +96,26 @@ Next you want to access the GUI and while in the GUI you should only be able to 
 
 **Openflow virtual switch:**<br>
 * sudo ovs-ofctl dump-flows s1 *(This command prints out the flow tables for the openflow switch)*<br>
+* <ins>Here is a resource for OvS switch docs:</ins> http://www.openvswitch.org/support/dist-docs/ovs-fields.7.txt <br>
+
+**Docker Commands:**<br>
+* sudo docker ps *(lists currently running docker containers)* <br>
+* sudo docker ps -a *(lists recently exited containers)* <br>
+* sudo docker rm 'docker id' *(rm instance and frees up resources)* <br>
+* sudo docker exec -it onos /bin/bash *(accessing terminal in container)* <br>
+* sudo docker inspect "docker id" *(Inspecting docker container details)* <br>
+
+**ONOS CLI Commands:**<br>
+* flows -s *(lists the flows for all of the connected openflow switches)* <br>
+* devices *(lists the openflow devices connected to the controller)* <br>
+* <ins>For more CLI commands:</ins> https://wiki.onosproject.org/display/ONOS/Appendix+A+%3A+CLI+commands <br>
+* <ins>Great YouTube video for ONOS intents:</ins> https://www.youtube.com/watch?v=glkJaBvtqpA <br>
+
+**Netcat Commands to start a TCP connection:**<br>
+* Server: nc -l 2399 <br>
+* Client: nc "server_ip" 2399 <br>
+
+---
 
 ## Contributors 
 - Kyle Everett -- **Linkedin:** https://www.linkedin.com/in/kyle-everett-829b50113/
